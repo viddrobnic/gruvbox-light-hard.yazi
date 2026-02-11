@@ -3,55 +3,37 @@
 </div>
 
 <h3 align="center">
-	Example Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+  Gruvbox Light Hard flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
-## Cooking up a new flavor
+This flavor targets the Gruvbox Light Hard palette, tuned for Yazi UI contrast and readability.
 
-> [!NOTE]
-> Please remove this section from your README before publishing.
-
-1. [x] Use this template and rename it to `your-flavor-name.yazi`.
-2. [ ] Copy the **parts you need to customize** from the default [theme-dark.toml][theme-dark] or [theme-light.toml][theme-light] as `./flavor.toml`, and change them to meet your preferences.
-3. [ ] Find a `.tmTheme` file on GitHub that matches the color of your flavor, copy it and its license file as `./tmtheme.xml`, and `LICENSE-tmtheme`.
-4. [ ] Modify the content and preview image in the README to fit your flavor.
-
-[theme-dark]: https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/theme-dark.toml
-[theme-light]: https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/theme-light.toml
-
-## 👀 Preview
-
-<img src="preview.png" width="600" />
-
-## 🎨 Installation
-
-<!-- Please replace "username/example" with your repository name. -->
+## Installation
 
 ```sh
-ya pkg add username/example
+ya pkg add viddrobnic/gruvbox-light-hard
 ```
 
-## ⚙️ Usage
+## Usage
 
-<!--
-Please replace "example" with your flavor name.
-
-If your flavor uses a light color scheme, use "light" instead of "dark" wherever it appears below.
--->
-
-To set it as your dark flavor, change the content of your `theme.toml` to:
+Set it as your light flavor in `theme.toml`:
 
 ```toml
 [flavor]
-dark = "example"
+light = "gruvbox-light-hard"
 ```
 
-Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.
+If you also use a dark flavor, keep both keys:
 
-See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for more details.
+```toml
+[flavor]
+light = "gruvbox-light-hard"
+dark = "<your-dark-flavor>"
+```
 
-## 📜 License
+See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for details.
 
-The flavor is MIT-licensed, and the included tmTheme is also MIT-licensed.
+## License
 
-Check the [LICENSE](LICENSE) and [LICENSE-tmtheme](LICENSE-tmtheme) file for more details.
+- Flavor files are MIT licensed under [LICENSE](LICENSE).
+- `tmtheme.xml` is MIT licensed under [LICENSE-tmtheme](LICENSE-tmtheme).
