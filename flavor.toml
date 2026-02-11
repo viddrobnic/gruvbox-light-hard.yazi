@@ -26,7 +26,7 @@ count_cut      = { fg = "#f9f5d7", bg = "#cc241d" }
 count_selected = { fg = "#f9f5d7", bg = "#d79921" }
 
 # Border
-border_symbol = "|"
+border_symbol = "│"
 border_style  = { fg = "#bdae93" }
 
 # : }}}
@@ -35,12 +35,12 @@ border_style  = { fg = "#bdae93" }
 # : Tabs {{{
 
 [tabs]
-active   = { fg = "#f9f5d7", bg = "#665c54", bold = true }
-inactive = { fg = "#665c54", bg = "#d5c4a1" }
+active   = { fg = "#f9f5d7", bg = "#458588", bold = true }
+inactive = { fg = "#458588", bg = "#d5c4a1" }
 
 # Separator
-sep_inner = { open = "", close = "" }
-sep_outer = { open = "", close = "" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
 
 # : }}}
 
@@ -48,16 +48,16 @@ sep_outer = { open = "", close = "" }
 # : Mode {{{
 
 [mode]
-normal_main = { fg = "#f9f5d7", bg = "#665c54", bold = true }
-normal_alt  = { fg = "#665c54", bg = "#d5c4a1" }
+normal_main = { fg = "#f9f5d7", bg = "#458588", bold = true }
+normal_alt  = { fg = "#458588", bg = "#d5c4a1" }
 
 # Select mode
-select_main = { fg = "#f9f5d7", bg = "#d65d0e", bold = true }
-select_alt  = { fg = "#665c54", bg = "#d5c4a1" }
+select_main = { fg = "#f9f5d7", bg = "#cc241d", bold = true }
+select_alt  = { fg = "#cc241d", bg = "#d5c4a1" }
 
 # Unset mode
-unset_main = { fg = "#f9f5d7", bg = "#98971a", bold = true }
-unset_alt  = { fg = "#665c54", bg = "#d5c4a1" }
+unset_main = { fg = "#f9f5d7", bg = "#d79921", bold = true }
+unset_alt  = { fg = "#d79921", bg = "#d5c4a1" }
 
 # : }}}
 
@@ -68,7 +68,7 @@ unset_alt  = { fg = "#665c54", bg = "#d5c4a1" }
 parent  = { reversed = true }
 current = { reversed = true }
 preview = { underline = true }
-padding = { open = "#", close = "#" }
+padding = { open = "", close = "" }
 
 # : }}}
 
@@ -77,8 +77,8 @@ padding = { open = "#", close = "#" }
 
 [status]
 overall   = {}
-sep_left  = { open = "", close = "" }
-sep_right = { open = "", close = "" }
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
 
 # Permissions
 perm_sep   = { fg = "#bdae93" }
@@ -103,7 +103,7 @@ mask            = { bg = "#ebdbb2" }
 cand            = { fg = "#458588" }
 rest            = { fg = "#928374" }
 desc            = { fg = "#d65d0e" }
-separator       = " -> "
+separator       = "  "
 separator_style = { fg = "#a89984" }
 
 # : }}}
